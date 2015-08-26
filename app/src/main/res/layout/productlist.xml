@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:hint="@string/editTextListHeader"
+        android:id="@+id/editTextListHeader"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:imeOptions="actionDone"/>
+
+    <ListView
+        android:id="@+id/lvMain"
+        android:layout_width="match_parent"
+        android:layout_height="409dp"
+        android:layout_marginBottom="3dp"
+        tools:listitem="@android:layout/simple_list_item_1">
+    </ListView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/editText"
+            android:layout_weight="1"
+            android:imeOptions="actionDone" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Ok"
+            android:id="@+id/button"
+            android:layout_weight="3" />
+    </LinearLayout>
+
+</LinearLayout>
